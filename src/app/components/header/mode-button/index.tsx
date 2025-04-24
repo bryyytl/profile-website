@@ -15,15 +15,17 @@ const ModeButton = () => {
     getInitialValueInEffect: true,
   });
 
+  const handleClick = () => {
+    setColorScheme(computedColorScheme === "light" ? "dark" : "light");
+  };
+
   return (
     <ActionIcon
-      onClick={() =>
-        setColorScheme(computedColorScheme === "light" ? "dark" : "light")
-      }
-      variant="default"
-      bd="xl"
-      size="lg"
       aria-label="Toggle color scheme"
+      bd="xl"
+      onClick={handleClick}
+      size="lg"
+      variant="default"
     >
       {computedColorScheme === "light" ? <IconMoon /> : <IconSun />}
     </ActionIcon>

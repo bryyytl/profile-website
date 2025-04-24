@@ -5,28 +5,28 @@ import ModeButton from "./mode-button";
 
 const Header = () => {
   return (
-    <Group p="md" justify="space-between">
-      <Anchor component={Link} c="var(--text-primary)" href="/" target="_blank">
+    <Group justify="space-between" p="md">
+      <Anchor c="var(--text-primary)" component={Link} href="/" target="_blank">
         Home
       </Anchor>
       <Group gap="sm">
         <ActionIcon
-          component={Link}
+          aria-label="Navigate to github"
           bd="xl"
+          component={Link}
           href="https://github.com/bryyytl"
           size="lg"
           variant="default"
-          aria-label="Navigate to github"
         >
           <IconBrandGithub />
         </ActionIcon>
         <ActionIcon
-          component={Link}
+          aria-label="Navigate to LinkedIn"
           bd="xl"
+          component={Link}
           href="https://www.linkedin.com/in/bryan-laporte/"
           size="lg"
           variant="default"
-          aria-label="Navigate to LinkedIn"
         >
           <IconBrandLinkedin />
         </ActionIcon>

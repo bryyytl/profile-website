@@ -9,7 +9,7 @@ const About = () => {
     <Stack>
       <Title order={2}>About</Title>
       <Flex align="flex-start" gap="md">
-        <Box bg="blue" w={500} h="200">
+        <Box bg="blue" h="200" w={500}>
           {/* <Lottie animationData={devAnimation} loop={true} /> */}
         </Box>
         <Stack mt="md">

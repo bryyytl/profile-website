@@ -34,8 +34,8 @@ const Layout = ({
     <html lang="en" {...mantineHtmlProps} className={roboto.className}>
       <head>
         <ColorSchemeScript
-          nonce="8IBTHwOdqNKAWeKl7plt8g=="
           defaultColorScheme="auto"
+          nonce="8IBTHwOdqNKAWeKl7plt8g=="
         />
       </head>
       <body>

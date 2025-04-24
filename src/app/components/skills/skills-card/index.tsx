@@ -9,7 +9,7 @@ const SkillsCard = ({ cardIcon }: SkillsCardProps) => {
   const CardIcon = cardIcon;
 
   return (
-    <Card withBorder shadow="sm" w="fit-content">
+    <Card shadow="sm" w="fit-content" withBorder>
       <CardIcon />
     </Card>
   );
