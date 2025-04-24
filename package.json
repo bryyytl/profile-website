@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "dev": "next dev --turbopack",
+    "dev": "next dev",
+    "dev:pack": "next dev --turbopack",
     "lint:fix": "prettier . --write",
     "lint": "next lint && prettier . --check",
     "start": "next start"
@@ -12,6 +13,7 @@
   "dependencies": {
     "@mantine/core": "^7.17.3",
     "@mantine/hooks": "^7.17.3",
+    "@tabler/icons-react": "^3.31.0",
     "lottie-react": "^2.4.1",
     "next": "15.2.4",
     "react": "^19.0.0",

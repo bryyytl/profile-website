@@ -1,13 +1,16 @@
 import { Card } from "@mantine/core";
+import { ElementType } from "react";
 
 interface SkillsCardProps {
-  cardText: string;
+  cardIcon: ElementType;
 }
 
-const SkillsCard = ({ cardText }: SkillsCardProps) => {
+const SkillsCard = ({ cardIcon }: SkillsCardProps) => {
+  const CardIcon = cardIcon;
+
   return (
-    <Card withBorder shadow="sm">
-      {cardText}
+    <Card withBorder shadow="sm" w="fit-content">
+      <CardIcon />
     </Card>
   );
 };
