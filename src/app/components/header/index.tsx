@@ -12,9 +12,9 @@ const Header = () => {
       <Group gap="sm">
         <ActionIcon
           aria-label="Navigate to github"
-          bd="xl"
           component={Link}
           href="https://github.com/bryyytl"
+          radius="md"
           size="lg"
           variant="default"
         >
@@ -22,15 +22,15 @@ const Header = () => {
         </ActionIcon>
         <ActionIcon
           aria-label="Navigate to LinkedIn"
-          bd="xl"
           component={Link}
           href="https://www.linkedin.com/in/bryan-laporte/"
+          radius="md"
           size="lg"
           variant="default"
         >
           <IconBrandLinkedin />
         </ActionIcon>
-        <ModeButton />{" "}
+        <ModeButton />
       </Group>
     </Group>
   );

@@ -10,6 +10,7 @@ import Experience from "./components/experience";
 const Home = () => {
   return (
     <AppShell
+      footer={{ height: 60 }}
       header={{ height: 60 }}
       navbar={{
         width: 200,
@@ -31,6 +32,7 @@ const Home = () => {
           <Education />
         </Stack>
       </AppShell.Main>
+      <AppShell.Footer p="md">Footer</AppShell.Footer>
     </AppShell>
   );
 };

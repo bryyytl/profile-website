@@ -1,15 +1,14 @@
-import { Stack, Text, Title } from "@mantine/core";
+import { Stack, Title, TypographyStylesProvider } from "@mantine/core";
+import Markdown from "react-markdown";
+import markdown from "./constants";
 
 const Experience = () => {
   return (
     <Stack>
       <Title order={2}>Experience</Title>
-      <Text>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde provident
-        eos fugiat id necessitatibus magni ducimus molestias. Placeat,
-        consequatur. Quisquam, quae magnam perspiciatis excepturi iste sint
-        itaque sunt laborum. Nihil?
-      </Text>
+      <TypographyStylesProvider>
+        <Markdown>{markdown}</Markdown>
+      </TypographyStylesProvider>
     </Stack>
   );
 };

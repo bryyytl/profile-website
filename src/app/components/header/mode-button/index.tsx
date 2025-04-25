@@ -6,8 +6,7 @@ import {
   useMantineColorScheme,
 } from "@mantine/core";
 import { IconMoon, IconSun } from "@tabler/icons-react";
-
-// TODO: Address https://mantine.dev/theming/color-schemes/#color-scheme-value-caveats
+import classes from "./modebutton.module.css";
 
 const ModeButton = () => {
   const { setColorScheme } = useMantineColorScheme();
@@ -22,12 +21,13 @@ const ModeButton = () => {
   return (
     <ActionIcon
       aria-label="Toggle color scheme"
-      bd="xl"
       onClick={handleClick}
+      radius="md"
       size="lg"
       variant="default"
     >
-      {computedColorScheme === "light" ? <IconMoon /> : <IconSun />}
+      <IconSun className={classes.light} stroke={1.5} />
+      <IconMoon className={classes.dark} stroke={1.5} />
     </ActionIcon>
   );
 };
