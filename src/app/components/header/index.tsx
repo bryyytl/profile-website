@@ -1,14 +1,14 @@
-import { ActionIcon, Anchor, Group } from "@mantine/core";
+import { ActionIcon, Group } from "@mantine/core";
 import { IconBrandGithub, IconBrandLinkedin } from "@tabler/icons-react";
 import Link from "next/link";
 import ModeButton from "./mode-button";
 
 const Header = () => {
   return (
-    <Group justify="space-between" p="md">
-      <Anchor c="var(--text-primary)" component={Link} href="/" target="_blank">
+    <Group justify="flex-end" p="md">
+      {/* <Anchor c="var(--text-primary)" component={Link} href="/" target="_blank">
         Home
-      </Anchor>
+      </Anchor> */}
       <Group gap="sm">
         <ActionIcon
           aria-label="Navigate to github"

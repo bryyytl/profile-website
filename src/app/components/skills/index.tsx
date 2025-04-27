@@ -14,7 +14,7 @@ import SkillsCard from "./skills-card";
 
 const Skills = () => {
   return (
-    <Stack>
+    <Stack p="xl">
       <Title order={2}>My Top Skills</Title>
       <Group gap="md" maw={600}>
         <SkillsCard cardIcon={IconFileTypeJsx} />

@@ -4,7 +4,7 @@ import PersonalInterests from "./personal-interests";
 
 const About = () => {
   return (
-    <Stack>
+    <Stack p="xl">
       <Title order={2}>About</Title>
       <Flex align="flex-start" gap="md">
         <AboutAnimation />
