@@ -1,9 +1,9 @@
 import { ColorSchemeScript, mantineHtmlProps } from "@mantine/core";
-import "@mantine/core/styles.layer.css";
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import type { ReactNode } from "react";
 import ThemeProvider from "./components/theme";
+import "@mantine/core/styles.layer.css";
 
 const roboto = Roboto({
   display: "swap",
