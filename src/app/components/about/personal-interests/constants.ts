@@ -15,45 +15,45 @@ export interface PersonalInterestCard {
 }
 
 const designSystemsCard: PersonalInterestCard = {
-  icon: IconBrush,
-  title: "UX design systems",
   description:
     "Experienced in creating and maintaining responsive (desktop & mobile) design systems for small and medium size brands.",
+  icon: IconBrush,
+  title: "UX design systems",
 };
 
 const accessibilityCard: PersonalInterestCard = {
-  icon: IconAccessible,
-  title: "Application accessibility",
   description:
     " Champion of building accessible platforms for all users - regardless of background.",
+  icon: IconAccessible,
+  title: "Application accessibility",
 };
 
 const performanceCard: PersonalInterestCard = {
-  icon: IconBrandSpeedtest,
-  title: "Application performance optimization",
   description:
     "Experienced in variety of performance optimization techniques with proven record of enhancing web page load performance by more than 50%.",
+  icon: IconBrandSpeedtest,
+  title: "Application performance optimization",
 };
 
 const testingCard: PersonalInterestCard = {
-  icon: IconHeartRateMonitor,
-  title: "User-centric automated testing",
   description:
     "Experienced in leading adoption of unit, integration, and end-to-end test suite development for small and medium sized platforms.",
+  icon: IconHeartRateMonitor,
+  title: "User-centric automated testing",
 };
 
 const platformSolutionsCard: PersonalInterestCard = {
-  icon: IconMapQuestion,
-  title: "Development of large and small scale solutions",
   description:
     "Interest in developing platform solutions, product solutions, and internal tools for a variety of use cases.",
+  icon: IconMapQuestion,
+  title: "Development of large and small scale solutions",
 };
 
 const productRoadmapCard: PersonalInterestCard = {
-  icon: IconRoute,
-  title: "Product roadmap champion",
   description:
     "Experienced in guiding product direction and details from the start, middle, and end of projects - particularly through the adoption of agile practices.",
+  icon: IconRoute,
+  title: "Product roadmap champion",
 };
 
 export const personalInterestCards: PersonalInterestCard[] = [

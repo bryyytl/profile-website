@@ -7,7 +7,7 @@ const PersonalInterests = (): ReactElement => {
   return (
     <Stack>
       <Title order={3}>Personal Interests</Title>
-      <SimpleGrid cols={{ base: 1, sm: 2, md: 3 }} spacing="md">
+      <SimpleGrid cols={{ base: 1, md: 3, sm: 2 }} spacing="md">
         {personalInterestCards.map(({ icon, title, description }) => (
           <PersonalInterestCard
             description={description}

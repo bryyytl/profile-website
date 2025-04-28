@@ -9,6 +9,7 @@ export default tseslint.config(
     ...eslint.configs.recommended,
     rules: {
       "no-console": "warn",
+      "sort-keys": "warn",
     },
   },
   tseslint.configs.strictTypeChecked,

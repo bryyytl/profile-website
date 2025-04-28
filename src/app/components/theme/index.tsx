@@ -16,11 +16,11 @@ const theme = createTheme({
 });
 
 const resolver: CSSVariablesResolver = () => ({
-  variables: {},
-  light: {},
   dark: {
     "--mantine-color-text": "#fff",
   },
+  light: {},
+  variables: {},
 });
 
 const ThemeProvider = ({ children }: PropsWithChildren) => {

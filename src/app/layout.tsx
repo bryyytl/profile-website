@@ -7,8 +7,8 @@ import "@mantine/core/styles.layer.css";
 
 const roboto = Roboto({
   display: "swap",
-  weight: ["400", "500", "600", "700"],
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
 });
 
 export const metadata: Metadata = {
