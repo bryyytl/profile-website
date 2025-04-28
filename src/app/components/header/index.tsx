@@ -11,7 +11,7 @@ const Header = () => {
       </Anchor> */}
       <Group gap="sm">
         <ActionIcon
-          aria-label="Navigate to github"
+          aria-label="Navigate to GitHub"
           component={Link}
           href="https://github.com/bryyytl"
           radius="md"
