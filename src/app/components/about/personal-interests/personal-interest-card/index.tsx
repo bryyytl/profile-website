@@ -18,7 +18,7 @@ const PersonalInterestCard = ({
   return (
     <Card className={styles.card} padding="xl" radius="md" shadow="md">
       <Icon size={50} stroke={2} />
-      <Text className={styles.cardTitle} fw={500} fz="lg" mt="md">
+      <Text className={styles["card-title"]} fw={500} fz="lg" mt="md">
         {title}
       </Text>
       <Text c="dimmed" fz="sm" mt="sm">
