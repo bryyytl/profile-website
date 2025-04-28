@@ -14,11 +14,7 @@ const PersonalInterests = (): ReactElement => {
   return (
     <Stack>
       <Title order={3}>Personal Interests</Title>
-      {/* <Text>
-        Specialized interest in UX design systems, application accessibility
-        standards, user-centric automated testing, and agile practices.
-      </Text> */}
-      <SimpleGrid cols={{ base: 1, md: 3 }} spacing="md">
+      <SimpleGrid cols={{ base: 1, sm: 2, md: 3 }} spacing="md">
         <Card className={styles.card} padding="xl" radius="md" shadow="md">
           <IconBrush size={50} stroke={2} />
           <Text className={styles.cardTitle} fw={500} fz="lg" mt="md">
@@ -45,7 +41,9 @@ const PersonalInterests = (): ReactElement => {
             Application performance optimization
           </Text>
           <Text c="dimmed" fz="sm" mt="sm">
-            Description
+            Experienced in variety of performance optimization techniques with
+            proven record of enhancing web page load performance by more than
+            50%.
           </Text>
         </Card>
         <Card className={styles.card} padding="xl" radius="md" shadow="md">

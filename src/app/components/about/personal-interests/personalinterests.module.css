@@ -12,7 +12,7 @@
   margin: auto;
 
   &::after {
-    content: '';
+    content: "";
     display: block;
     background-color: var(--mantine-color-blue-filled);
     width: 45px;
@@ -24,12 +24,13 @@
 }
 
 .card {
-  border: 1px solid light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-5));
+  border: 1px solid
+    light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-5));
 }
 
 .cardTitle {
   &::after {
-    content: '';
+    content: "";
     display: block;
     background-color: var(--mantine-color-blue-filled);
     width: 45px;
