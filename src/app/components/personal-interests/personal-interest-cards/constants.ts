@@ -57,10 +57,10 @@ const productRoadmapCard: PersonalInterestCard = {
 };
 
 export const personalInterestCards: PersonalInterestCard[] = [
-  designSystemsCard,
-  accessibilityCard,
-  performanceCard,
-  testingCard,
   platformSolutionsCard,
+  designSystemsCard,
+  performanceCard,
+  accessibilityCard,
+  testingCard,
   productRoadmapCard,
 ];

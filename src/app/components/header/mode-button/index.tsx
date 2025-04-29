@@ -2,6 +2,7 @@
 
 import {
   ActionIcon,
+  Tooltip,
   useComputedColorScheme,
   useMantineColorScheme,
 } from "@mantine/core";
@@ -13,22 +14,19 @@ const ModeButton = () => {
   const computedColorScheme = useComputedColorScheme("light", {
     getInitialValueInEffect: true,
   });
+  const toggleEffect = computedColorScheme === "light" ? "dark" : "light";
 
   const handleClick = () => {
-    setColorScheme(computedColorScheme === "light" ? "dark" : "light");
+    setColorScheme(toggleEffect);
   };
 
   return (
-    <ActionIcon
-      aria-label="Toggle color scheme"
-      onClick={handleClick}
-      radius="md"
-      size="lg"
-      variant="default"
-    >
-      <IconSun className={classes.light} stroke={1.5} />
-      <IconMoon className={classes.dark} stroke={1.5} />
-    </ActionIcon>
+    <Tooltip label={`${toggleEffect} mode`} tt="capitalize">
+      <ActionIcon aria-label="Toggle Mode" onClick={handleClick}>
+        <IconSun className={classes.light} stroke={1.5} />
+        <IconMoon className={classes.dark} stroke={1.5} />
+      </ActionIcon>
+    </Tooltip>
   );
 };
 

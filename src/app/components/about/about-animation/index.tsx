@@ -6,7 +6,7 @@ const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
 
 const AboutAnimation = () => {
   return (
-    <Box w={500}>
+    <Box maw={450}>
       <Lottie animationData={devAnimation} loop={true} />
     </Box>
   );

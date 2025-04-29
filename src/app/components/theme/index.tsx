@@ -1,34 +1,16 @@
 "use client";
 
-import {
-  CSSVariablesResolver,
-  MantineProvider,
-  createTheme,
-} from "@mantine/core";
-import "@mantine/core/styles.css";
+import { MantineProvider } from "@mantine/core";
 import type { PropsWithChildren } from "react";
-
-const theme = createTheme({
-  fontFamily: "Roboto, Arial, Verdana, sans-serif",
-  headings: {
-    fontWeight: "500",
-  },
-});
-
-const resolver: CSSVariablesResolver = () => ({
-  dark: {
-    "--mantine-color-text": "#fff",
-  },
-  light: {},
-  variables: {},
-});
+import cssVariablesResolver from "./cssVariablesResolver";
+import defaultTheme from "./defaultTheme";
 
 const ThemeProvider = ({ children }: PropsWithChildren) => {
   return (
     <MantineProvider
-      cssVariablesResolver={resolver}
+      cssVariablesResolver={cssVariablesResolver}
       defaultColorScheme="auto"
-      theme={theme}
+      theme={defaultTheme}
     >
       {children}
     </MantineProvider>
