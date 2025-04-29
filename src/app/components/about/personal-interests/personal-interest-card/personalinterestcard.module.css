@@ -28,7 +28,7 @@
     light-dark(var(--mantine-color-gray-1), var(--mantine-color-dark-5));
 }
 
-.cardTitle {
+.card-title {
   &::after {
     content: "";
     display: block;
