@@ -1,7 +1,7 @@
 import { SVGProps } from "react";
 import type { ReactElement } from "react";
 
-const DatabaseIcon = (props: SVGProps<SVGSVGElement>): ReactElement => {
+const DynamoDBIcon = (props: SVGProps<SVGSVGElement>): ReactElement => {
   return (
     <svg
       height="1em"
@@ -34,4 +34,4 @@ const DatabaseIcon = (props: SVGProps<SVGSVGElement>): ReactElement => {
   );
 };
 
-export default DatabaseIcon;
+export default DynamoDBIcon;
