@@ -17,7 +17,9 @@ export default function NotFound() {
           />
         </svg>
         <div className={classes.content}>
-          <Title className={classes.title}>Nothing to see here</Title>
+          <Title className={classes.title} order={1}>
+            Nothing to see here
+          </Title>
           <Text
             c="dimmed"
             className={classes.description}

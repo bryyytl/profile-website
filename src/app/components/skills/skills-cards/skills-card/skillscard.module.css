@@ -1,0 +1,10 @@
+.skills-card-title {
+  &::after {
+    content: "";
+    display: block;
+    background-color: var(--mantine-color-blue-filled);
+    width: 45px;
+    height: 2px;
+    margin-top: var(--mantine-spacing-sm);
+  }
+}
