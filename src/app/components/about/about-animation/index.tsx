@@ -1,14 +1,12 @@
-import { Box } from "@mantine/core";
-import dynamic from "next/dynamic";
-import devAnimation from "./lottie-asset.json";
-
-const Lottie = dynamic(() => import("lottie-react"), { ssr: false });
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 const AboutAnimation = () => {
   return (
-    <Box maw={450}>
-      <Lottie animationData={devAnimation} loop={true} />
-    </Box>
+    <DotLottieReact
+      autoplay
+      loop
+      src="https://lottie.host/d6638d97-2d60-4c48-8fed-587d7497c991/W0ivBWeFXD.lottie"
+    />
   );
 };
 
