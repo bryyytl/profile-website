@@ -9,7 +9,7 @@ const AboutDescription = () => {
         </Title>
         <Text>
           I am a passionate senior front-end focused full stack web software
-          engineer with 5+ years of experience developing graphically rich
+          engineer with over 5 years of experience developing graphically rich
           dashboard applications and web APIs in an agile environment.
         </Text>
       </Stack>
