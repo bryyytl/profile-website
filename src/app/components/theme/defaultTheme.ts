@@ -1,4 +1,4 @@
-import { ActionIcon, Card, createTheme } from "@mantine/core";
+import { ActionIcon, Card, createTheme, ScrollArea } from "@mantine/core";
 
 const defaultTheme = createTheme({
   components: {
@@ -14,6 +14,11 @@ const defaultTheme = createTheme({
         radius: "md",
         shadow: "sm",
         withBorder: true,
+      },
+    }),
+    ScrollArea: ScrollArea.extend({
+      defaultProps: {
+        type: "auto",
       },
     }),
   },
