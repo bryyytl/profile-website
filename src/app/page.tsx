@@ -1,30 +1,24 @@
 "use client";
 
-import { AppShell, Stack } from "@mantine/core";
+import { Stack } from "@mantine/core";
 import About from "./components/about";
-import Header from "./components/header";
-import Skills from "./components/skills";
-import Footer from "./components/footer";
 import PersonalInterests from "./components/personal-interests";
+import ShellLayout from "./components/shell";
+import Skills from "./components/skills";
+import { NavigationProvider } from "./common/contexts/navigation";
 
-const Home = () => {
+const HomePage = () => {
   return (
-    <AppShell footer={{ height: 60 }} header={{ height: 60 }}>
-      <AppShell.Header>
-        <Header />
-      </AppShell.Header>
-      <AppShell.Main>
+    <NavigationProvider>
+      <ShellLayout>
         <Stack gap="xl">
           <About />
           <Skills />
           <PersonalInterests />
         </Stack>
-      </AppShell.Main>
-      <AppShell.Footer p="md">
-        <Footer />
-      </AppShell.Footer>
-    </AppShell>
+      </ShellLayout>
+    </NavigationProvider>
   );
 };
 
-export default Home;
+export default HomePage;
