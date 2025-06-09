@@ -19,11 +19,6 @@ const resourceCollectionList: ResourceCollection[] = [
         description: "MDN Array Docs",
         href: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
       },
-    ],
-    title: "Front-end Development - General",
-  },
-  {
-    items: [
       {
         description: "Next.js Docs",
         href: "https://nextjs.org/docs/app/getting-started/installation",
@@ -32,8 +27,12 @@ const resourceCollectionList: ResourceCollection[] = [
         description: "Next.js MDX Guide",
         href: "https://nextjs.org/docs/pages/guides/mdx",
       },
+      {
+        description: "React Virtuoso",
+        href: "https://virtuoso.dev/",
+      },
     ],
-    title: "Front-end Development - Next.js Helpful Links",
+    title: "General",
   },
   {
     items: [
@@ -45,6 +44,19 @@ const resourceCollectionList: ResourceCollection[] = [
         description: "Tailwind CSS",
         href: "https://tailwindcss.com/docs",
       },
+      {
+        description: "Sass / SCSS",
+        href: "https://sass-lang.com/documentation/",
+      },
+      {
+        description: "PX to Rem Converter",
+        href: "https://nekocalc.com/px-to-rem-converter",
+      },
+    ],
+    title: "Styling",
+  },
+  {
+    items: [
       {
         description: "Mantine Core",
         href: "https://mantine.dev/getting-started/",
@@ -58,7 +70,7 @@ const resourceCollectionList: ResourceCollection[] = [
         href: "https://mui.com/material-ui/",
       },
     ],
-    title: "Front-end Development - Styling & UX",
+    title: "Design Systems",
   },
   {
     items: [
@@ -79,7 +91,28 @@ const resourceCollectionList: ResourceCollection[] = [
         href: "https://immerjs.github.io/immer/",
       },
     ],
-    title: "Front-end Development - State Management",
+    title: "State Management",
+  },
+  {
+    items: [
+      {
+        description: "Prettier",
+        href: "https://prettier.io/docs/",
+      },
+      {
+        description: "ESLint",
+        href: "https://eslint.org/",
+      },
+      {
+        description: "TypeScript ESLint",
+        href: "https://typescript-eslint.io/getting-started/",
+      },
+      {
+        description: "Stylelint",
+        href: "https://stylelint.io/",
+      },
+    ],
+    title: "Linters",
   },
   {
     items: [
@@ -95,8 +128,12 @@ const resourceCollectionList: ResourceCollection[] = [
         description: "Cypress",
         href: "https://docs.cypress.io/",
       },
+      {
+        description: "Common Mistakes with React Testing Library",
+        href: "https://kentcdodds.com/blog/common-mistakes-with-react-testing-library",
+      },
     ],
-    title: "Front-end Development - Testing",
+    title: "Testing",
   },
   {
     items: [
@@ -116,8 +153,16 @@ const resourceCollectionList: ResourceCollection[] = [
         description: "Phosphor Icons",
         href: "https://phosphoricons.com/",
       },
+      {
+        description: "Nivo",
+        href: "https://nivo.rocks/",
+      },
+      {
+        description: "Recharts",
+        href: "https://recharts.org/en-US/examples",
+      },
     ],
-    title: "Icons & Other Graphics",
+    title: "Icons, Charts, & Other Graphics",
   },
   {
     items: [
@@ -155,7 +200,7 @@ const resourceCollectionList: ResourceCollection[] = [
         href: "https://www.keychron.com/",
       },
     ],
-    title: "Hardware - Keyboards",
+    title: "Hardware",
   },
 ];
 
