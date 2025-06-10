@@ -1,22 +1,13 @@
+import { useResourceFilterContext } from "@/app/common/contexts/resource-filter";
 import { Chip, Group } from "@mantine/core";
 import { IconX } from "@tabler/icons-react";
 import type { ReactElement } from "react";
-import {
-  ResourceItemMetatag,
-  resourceItemMetatags,
-} from "../resourcecollection";
+import { resourceItemMetatags } from "../../../common/constants/resourceFilterCollection";
 
-interface ResourceFiltersProps {
-  handleChipClick: (event: React.MouseEvent<HTMLInputElement>) => void;
-  filterValue: string | null;
-  setFilterValue: (value: ResourceItemMetatag | null) => void;
-}
+const ResourceFilters = (): ReactElement => {
+  const { handleChipClick, filterValue, setFilterValue } =
+    useResourceFilterContext();
 
-const ResourceFilters = ({
-  handleChipClick,
-  setFilterValue,
-  filterValue,
-}: ResourceFiltersProps): ReactElement => {
   return (
     <Chip.Group
       multiple={false}
