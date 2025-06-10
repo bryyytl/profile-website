@@ -2,14 +2,17 @@
 
 import type { ReactElement } from "react";
 import { NavigationProvider } from "../common/contexts/navigation";
-import ResourcesList from "../components/resources-list";
+import Resources from "../components/resources";
 import ShellLayout from "../components/shell";
+import { ResourceFilterProvider } from "../common/contexts/resource-filter";
 
 const ResourcesPage = (): ReactElement => {
   return (
     <NavigationProvider>
       <ShellLayout>
-        <ResourcesList />
+        <ResourceFilterProvider>
+          <Resources />
+        </ResourceFilterProvider>
       </ShellLayout>
     </NavigationProvider>
   );
