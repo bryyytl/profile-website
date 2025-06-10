@@ -1,8 +1,27 @@
-import { Anchor, List, Stack, Title, Text, Container } from "@mantine/core";
+import {
+  Anchor,
+  List,
+  Stack,
+  Title,
+  Text,
+  Container,
+  Input,
+} from "@mantine/core";
+import { useState } from "react";
 import type { ReactElement } from "react";
-import resourceCollection from "./resourcecollection";
+import { resourceCollectionList } from "./resourcecollection";
+import type { ResourceItemMetatag } from "./resourcecollection";
+import ResourceFilters from "./resource-filters";
 
 const ResourcesList = (): ReactElement => {
+  const [filterValue, setFilterValue] = useState<ResourceItemMetatag | null>(
+    null,
+  );
+
+  const handleChipClick = (event: React.MouseEvent<HTMLInputElement>) => {
+    if (event.currentTarget.value === filterValue) setFilterValue(null);
+  };
+
   return (
     <Container my="xl" size="sm">
       <Stack>
@@ -11,22 +30,27 @@ const ResourcesList = (): ReactElement => {
           A collection of some of my favorite references, resources, and other
           miscellaneous things of interest.
         </Text>
-        <Stack gap="xl">
-          {resourceCollection.map(({ title, items }) => (
-            <Stack key={title}>
-              <Title order={2}>{title}</Title>
-              <List>
-                {items.map(({ href, description }) => (
-                  <List.Item key={description}>
-                    <Anchor href={href} target="_blank">
-                      {description}
-                    </Anchor>
-                  </List.Item>
-                ))}
-              </List>
-            </Stack>
-          ))}
-        </Stack>
+        <Input.Label>Filter by topic</Input.Label>
+        <ResourceFilters
+          filterValue={filterValue}
+          handleChipClick={handleChipClick}
+          setFilterValue={setFilterValue}
+        />
+        <Title order={3}>Matching Results</Title>
+        <List withPadding>
+          {resourceCollectionList
+            .filter(
+              (item) =>
+                filterValue === null || item.metatags.includes(filterValue),
+            )
+            .map(({ href, description }) => (
+              <List.Item key={description}>
+                <Anchor href={href} target="_blank">
+                  {description}
+                </Anchor>
+              </List.Item>
+            ))}
+        </List>
       </Stack>
     </Container>
   );
