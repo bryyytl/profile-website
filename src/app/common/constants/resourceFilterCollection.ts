@@ -14,6 +14,7 @@ export const resourceItemMetatags = [
   "react",
   "state management",
   "styling",
+  "tailwind",
   "testing",
   "tools",
 ] as const;
@@ -101,6 +102,24 @@ export const resourceCollectionList: ResourceItem[] = [
   },
   {
     category: "development",
+    description: "Tailwind CSS - Theme",
+    href: "https://tailwindcss.com/docs/theme",
+    metatags: ["documentation", "react", "styling", "tailwind"],
+  },
+  {
+    category: "development",
+    description: "Tailwind CSS Plus",
+    href: "https://tailwindcss.com/plus/ui-blocks#product-application-ui",
+    metatags: ["documentation", "react", "styling", "tailwind"],
+  },
+  {
+    category: "development",
+    description: "Headless UI",
+    href: "https://headlessui.com/",
+    metatags: ["documentation", "react", "styling", "tailwind"],
+  },
+  {
+    category: "development",
     description: "React API Docs",
     href: "https://react.dev/reference/react/hooks",
     metatags: ["documentation", "state management", "react"],
@@ -122,6 +141,12 @@ export const resourceCollectionList: ResourceItem[] = [
     description: "Immer",
     href: "https://immerjs.github.io/immer/",
     metatags: ["documentation", "state management"],
+  },
+  {
+    category: "development",
+    description: "Day.js",
+    href: "https://day.js.org/docs/en/installation/installation",
+    metatags: ["documentation", "react"],
   },
   {
     category: "development",
@@ -194,6 +219,12 @@ export const resourceCollectionList: ResourceItem[] = [
     description: "Phosphor Icons",
     href: "https://phosphoricons.com/",
     metatags: ["documentation", "icons", "react"],
+  },
+  {
+    category: "design",
+    description: "Hero Icons",
+    href: "https://heroicons.com/",
+    metatags: ["documentation", "icons", "react", "tailwind"],
   },
   {
     category: "development",
