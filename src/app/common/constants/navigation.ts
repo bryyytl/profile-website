@@ -1,5 +1,5 @@
 import { ElementType } from "react";
-import { IconHome, IconBooks } from "@tabler/icons-react";
+import { IconHome, IconLink } from "@tabler/icons-react";
 
 export interface NavigationLinkButton {
   href: string;
@@ -13,9 +13,14 @@ export const navigationLinkButtons: NavigationLinkButton[] = [
     icon: IconHome,
     label: "Home",
   },
+  // {
+  //   href: "/blog/",
+  //   icon: IconArticle,
+  //   label: "Blog",
+  // },
   {
     href: "/resources/",
-    icon: IconBooks,
+    icon: IconLink,
     label: "Resources",
   },
 ];
