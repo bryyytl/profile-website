@@ -1,4 +1,3 @@
-import { Group } from "@mantine/core";
 import type { ReactElement } from "react";
 import CopywriteText from "./copywrite-text";
 import GitHubNavigationActionIcon from "./github-navigation-action-icon";
@@ -6,13 +5,13 @@ import LinkedInNavigationActionIcon from "./linkedin-navigation-action-icon";
 
 const Footer = (): ReactElement => {
   return (
-    <Group gap="md" justify="space-between" wrap="nowrap">
+    <div className="gap-4 flex items-center justify-between">
       <CopywriteText />
-      <Group gap="xs" wrap="nowrap">
+      <div className="gap-1 flex items-center justify-start">
         <GitHubNavigationActionIcon />
         <LinkedInNavigationActionIcon />
-      </Group>
-    </Group>
+      </div>
+    </div>
   );
 };
 

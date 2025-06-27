@@ -4,6 +4,8 @@ import ModeButton from "./mode-button";
 import { navigationLinkButtons } from "@/app/common/constants/navigation";
 import { useNavigationContext } from "@/app/common/contexts/navigation";
 
+// div className="gap-1 flex items-center justify-start"
+
 const Header = () => {
   const { toggleNavMenu, isNavMenuOpen } = useNavigationContext();
   return (

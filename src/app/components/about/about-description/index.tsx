@@ -1,4 +1,4 @@
-import { Text, Title } from "@mantine/core";
+import { Title } from "@mantine/core";
 
 const AboutDescription = () => {
   return (
@@ -7,11 +7,11 @@ const AboutDescription = () => {
         <Title order={1} size="h3">
           Hi there, I'm Bryan Laporte!
         </Title>
-        <Text>
+        <p>
           I am a passionate senior front-end focused full stack web software
           engineer with over 5 years of experience developing graphically rich
           dashboard applications and web APIs in an agile environment.
-        </Text>
+        </p>
       </div>
     </div>
   );
