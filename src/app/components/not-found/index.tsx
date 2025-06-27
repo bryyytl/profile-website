@@ -1,13 +1,15 @@
-import { Button, Container, Group, Text, Title } from "@mantine/core";
-import classes from "./notfound.module.css";
+import { Button, Container, Title } from "@mantine/core";
 import Link from "next/link";
+import styles from "./notfound.module.css";
+import type { ReactElement } from "react";
+import clsx from "clsx";
 
-export default function NotFound() {
+const NotFound = (): ReactElement => {
   return (
-    <Container className={classes.root}>
-      <div className={classes.inner}>
+    <Container className="py-20">
+      <div className="relative">
         <svg
-          className={classes.image}
+          className={clsx("inset-0 absolute", styles["not-found-indicator"])}
           viewBox="0 0 362 145"
           xmlns="http://www.w3.org/2000/svg"
         >
@@ -16,27 +18,24 @@ export default function NotFound() {
             fill="currentColor"
           />
         </svg>
-        <div className={classes.content}>
-          <Title className={classes.title} order={1}>
+        <div className={styles.content}>
+          <Title className={styles.title} order={1}>
             Nothing to see here
           </Title>
-          <Text
-            c="dimmed"
-            className={classes.description}
-            size="lg"
-            ta="center"
-          >
-            Page you are trying to open does not exist. You may have mistyped
-            the address, or the page has been moved to another URL. If you think
-            this is an error contact support.
-          </Text>
-          <Group justify="center">
+          <p className="text-lg mt-8 mb-12 max-w-135 m-auto text-center text-[var(--mantine-color-dimmed)]">
+            The page you are trying to open does not exist. You may have
+            mistyped the address, or the page has been moved to another URL. If
+            you think this is an error contact support.
+          </p>
+          <div className="flex items-center justify-center">
             <Button component={Link} href="/" size="md">
               Take me back to home page
             </Button>
-          </Group>
+          </div>
         </div>
       </div>
     </Container>
   );
-}
+};
+
+export default NotFound;

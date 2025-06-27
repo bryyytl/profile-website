@@ -1,4 +1,4 @@
-import { NavLink, ScrollArea, Stack } from "@mantine/core";
+import { NavLink, ScrollArea } from "@mantine/core";
 import type { ReactElement } from "react";
 import { navigationLinkButtons } from "@/app/common/constants/navigation";
 import { usePathname } from "next/navigation";
@@ -7,7 +7,7 @@ const NavBar = (): ReactElement => {
   const pathname = usePathname();
   return (
     <ScrollArea>
-      <Stack px="xs" py="md">
+      <div className="gap-4 px-1 py-4 flex flex-col items-stretch justify-start">
         {navigationLinkButtons.map(({ label, href, icon: Icon }) => (
           <NavLink
             active={pathname === href}
@@ -18,7 +18,7 @@ const NavBar = (): ReactElement => {
             variant="subtle"
           />
         ))}
-      </Stack>
+      </div>
     </ScrollArea>
   );
 };

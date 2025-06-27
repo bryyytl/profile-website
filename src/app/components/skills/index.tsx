@@ -1,13 +1,13 @@
-import { Stack, Title } from "@mantine/core";
+import { Title } from "@mantine/core";
 import SkillsCards from "./skills-cards";
 
 const Skills = () => (
-  <Stack gap="sm" p="md">
+  <div className="gap-3 p-4 flex flex-col items-stretch justify-start">
     <Title mb="lg" order={2} ta="center">
       What I Do
     </Title>
     <SkillsCards />
-  </Stack>
+  </div>
 );
 
 export default Skills;

@@ -1,5 +1,5 @@
 import { useResourceFilterContext } from "@/app/common/contexts/resource-filter";
-import { Chip, Group } from "@mantine/core";
+import { Chip } from "@mantine/core";
 import { IconX } from "@tabler/icons-react";
 import type { ReactElement } from "react";
 import { resourceItemMetatags } from "../../../common/constants/resourceFilterCollection";
@@ -14,7 +14,7 @@ const ResourceFilters = (): ReactElement => {
       onChange={setFilterValue as (value: string | null) => void}
       value={filterValue}
     >
-      <Group gap="xs" mb="md">
+      <div className="mb-4 max-w-928 mx-auto flex flex-wrap items-center justify-start gap-[10px]">
         {[...resourceItemMetatags]
           .sort((a, b) =>
             a.toLocaleLowerCase().localeCompare(b.toLocaleLowerCase()),
@@ -30,7 +30,7 @@ const ResourceFilters = (): ReactElement => {
               {resourceItemMetatag}
             </Chip>
           ))}
-      </Group>
+      </div>
     </Chip.Group>
   );
 };

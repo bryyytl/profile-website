@@ -6,7 +6,7 @@ import { resourceCollectionList } from "../../../common/constants/resourceFilter
 const ResourceCollection = (): ReactElement => {
   const { filterValue } = useResourceFilterContext();
   return (
-    <List withPadding>
+    <List listStyleType="disc" withPadding>
       {resourceCollectionList
         .filter(
           (item) => filterValue === null || item.metatags.includes(filterValue),

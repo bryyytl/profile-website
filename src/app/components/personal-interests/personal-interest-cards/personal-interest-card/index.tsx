@@ -1,4 +1,4 @@
-import { Card, Text, Title } from "@mantine/core";
+import { Card, Title } from "@mantine/core";
 import type { ReactElement } from "react";
 import type { PersonalInterestCard } from "../constants";
 import styles from "./personalinterestcard.module.css";
@@ -16,9 +16,9 @@ const PersonalInterestCard = ({
       <Title className={styles["card-title"]} mt="md" order={3} size="h4">
         {title}
       </Title>
-      <Text c="dimmed" fz="sm" mt="sm">
+      <p className="text-sm mt-4 text-[var(--mantine-color-dimmed)]">
         {description}
-      </Text>
+      </p>
     </Card>
   );
 };
