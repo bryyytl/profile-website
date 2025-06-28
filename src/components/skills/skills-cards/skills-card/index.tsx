@@ -1,9 +1,9 @@
 import { Card, List, Title } from "@mantine/core";
 import type { ReactElement } from "react";
 import styles from "./skillscard.module.css";
-import type { SkillsCard } from "../constants";
+import type { Skill } from "@/components/skills/skills-cards/constants";
 
-const SkillsCard = ({ title, listItems }: SkillsCard): ReactElement => {
+const SkillsCard = ({ title, listItems }: Skill): ReactElement => {
   return (
     <Card padding="lg">
       <div className="gap-8 flex flex-col items-center justify-start">

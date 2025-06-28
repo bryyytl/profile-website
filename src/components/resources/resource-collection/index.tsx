@@ -1,7 +1,7 @@
-import { useResourceFilterContext } from "@/app/common/contexts/resource-filter";
+import { resourceCollectionList } from "@/constants/resourceFilterCollection";
+import { useResourceFilterContext } from "@/contexts/resource-filter";
 import { Anchor, List } from "@mantine/core";
 import type { ReactElement } from "react";
-import { resourceCollectionList } from "../../../common/constants/resourceFilterCollection";
 
 const ResourceCollection = (): ReactElement => {
   const { filterValue } = useResourceFilterContext();

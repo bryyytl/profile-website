@@ -2,8 +2,8 @@ import type { PropsWithChildren, ReactElement } from "react";
 import { useMemo, useState, useCallback } from "react";
 import type { ResourceFilterContextValue } from "./context";
 import ResourceFilterContext from "./context";
-import { ResourceItemMetatag } from "../../constants/resourceFilterCollection";
 import type { MouseEvent } from "react";
+import type { ResourceItemMetatag } from "@/constants/resourceFilterCollection";
 
 const ResourceFilterProvider = ({
   children,

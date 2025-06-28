@@ -1,7 +1,7 @@
 import { NavLink, ScrollArea } from "@mantine/core";
 import type { ReactElement } from "react";
-import { navigationLinkButtons } from "@/app/common/constants/navigation";
 import { usePathname } from "next/navigation";
+import { navigationLinkButtons } from "@/constants/navigation";
 
 const NavBar = (): ReactElement => {
   const pathname = usePathname();

@@ -1,29 +1,29 @@
-import AWSIcon from "@/app/icons/aws-icon";
-import DynamoDBIcon from "@/app/icons/dynamodb-icon";
-import FigmaIcon from "@/app/icons/figma-icon";
-import GoIcon from "@/app/icons/go-icon";
-import GraphQLIcon from "@/app/icons/graphql-icon";
-import JavaScriptIcon from "@/app/icons/javascript-icon";
-import JestIcon from "@/app/icons/jest-icon";
-import NextIcon from "@/app/icons/next-icon";
-import PostgreSQLIcon from "@/app/icons/postgresql-icon";
-import PythonIcon from "@/app/icons/python-icon";
-import ReactIcon from "@/app/icons/react-icon";
-import SassIcon from "@/app/icons/sass-icon";
-import TypeScriptIcon from "@/app/icons/typescript-icon";
+import AWSIcon from "@/components/icons/aws-icon";
+import DynamoDBIcon from "@/components/icons/dynamodb-icon";
+import FigmaIcon from "@/components/icons/figma-icon";
+import GoIcon from "@/components/icons/go-icon";
+import GraphQLIcon from "@/components/icons/graphql-icon";
+import JavaScriptIcon from "@/components/icons/javascript-icon";
+import JestIcon from "@/components/icons/jest-icon";
+import NextIcon from "@/components/icons/next-icon";
+import PostgreSQLIcon from "@/components/icons/postgresql-icon";
+import PythonIcon from "@/components/icons/python-icon";
+import ReactIcon from "@/components/icons/react-icon";
+import SassIcon from "@/components/icons/sass-icon";
+import TypeScriptIcon from "@/components/icons/typescript-icon";
 import type { ElementType } from "react";
 
-interface SkillsCardListItem {
+interface SkillListItem {
   iconElement: ElementType;
   iconDescription: string;
 }
 
-export interface SkillsCard {
-  listItems: SkillsCardListItem[];
+export interface Skill {
+  listItems: SkillListItem[];
   title: string;
 }
 
-const feDevelopmentCard: SkillsCard = {
+const feDevelopmentCard: Skill = {
   listItems: [
     {
       iconDescription: "React",
@@ -57,7 +57,7 @@ const feDevelopmentCard: SkillsCard = {
   title: "Front-end Development / UX Design",
 };
 
-const beDevelopmentCard: SkillsCard = {
+const beDevelopmentCard: Skill = {
   listItems: [
     {
       iconDescription: "Go",
@@ -87,4 +87,4 @@ const beDevelopmentCard: SkillsCard = {
   title: "Full-stack / Back-end Development",
 };
 
-export const skillCards: SkillsCard[] = [feDevelopmentCard, beDevelopmentCard];
+export const skillCards: Skill[] = [feDevelopmentCard, beDevelopmentCard];

@@ -1,13 +1,13 @@
 import { Card, Title } from "@mantine/core";
 import type { ReactElement } from "react";
-import type { PersonalInterestCard } from "../constants";
 import styles from "./personalinterestcard.module.css";
+import type { PersonalInterest } from "@/components/personal-interests/personal-interest-cards/constants";
 
 const PersonalInterestCard = ({
   description,
   icon,
   title,
-}: PersonalInterestCard): ReactElement => {
+}: PersonalInterest): ReactElement => {
   const Icon = icon;
 
   return (

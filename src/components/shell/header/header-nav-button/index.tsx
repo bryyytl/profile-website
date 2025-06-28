@@ -2,8 +2,8 @@ import type { ReactElement } from "react";
 import styles from "./headernavbutton.module.css";
 import { Anchor } from "@mantine/core";
 import Link from "next/link";
-import type { NavigationLinkButton } from "@/app/common/constants/navigation";
 import { usePathname } from "next/navigation";
+import type { NavigationLinkButton } from "@/constants/navigation";
 
 const HeaderNavButton = ({
   href,

@@ -1,8 +1,8 @@
-import { useResourceFilterContext } from "@/app/common/contexts/resource-filter";
+import { resourceItemMetatags } from "@/constants/resourceFilterCollection";
+import { useResourceFilterContext } from "@/contexts/resource-filter";
 import { Chip } from "@mantine/core";
 import { IconX } from "@tabler/icons-react";
 import type { ReactElement } from "react";
-import { resourceItemMetatags } from "../../../common/constants/resourceFilterCollection";
 
 const ResourceFilters = (): ReactElement => {
   const { handleChipClick, filterValue, setFilterValue } =

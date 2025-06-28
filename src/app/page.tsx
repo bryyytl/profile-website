@@ -1,10 +1,10 @@
 "use client";
 
-import { NavigationProvider } from "./common/contexts/navigation";
-import About from "./components/about";
-import PersonalInterests from "./components/personal-interests";
-import ShellLayout from "./components/shell";
-import Skills from "./components/skills";
+import About from "@/components/about";
+import PersonalInterests from "@/components/personal-interests";
+import ShellLayout from "@/components/shell";
+import Skills from "@/components/skills";
+import { NavigationProvider } from "@/contexts/navigation";
 
 const HomePage = () => {
   return (

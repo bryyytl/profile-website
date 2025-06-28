@@ -2,11 +2,11 @@
 
 import { AppShell } from "@mantine/core";
 import { PropsWithChildren } from "react";
-import { useNavigationContext } from "../../common/contexts/navigation";
-import useDetectMobileBreakpoint from "../../hooks/useDetectMobileBreakpoint";
 import Footer from "./footer";
 import Header from "./header";
 import NavBar from "./nav-bar";
+import useDetectMobileBreakpoint from "@/hooks/useDetectMobileBreakpoint";
+import { useNavigationContext } from "@/contexts/navigation";
 
 const ShellLayout = ({ children }: PropsWithChildren) => {
   const isMobileBreakpoint = useDetectMobileBreakpoint();

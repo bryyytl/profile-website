@@ -1,5 +1,5 @@
+import { ResourceItemMetatag } from "@/constants/resourceFilterCollection";
 import { createContext } from "react";
-import { ResourceItemMetatag } from "../../constants/resourceFilterCollection";
 import type { MouseEvent } from "react";
 
 export interface ResourceFilterContextValue {

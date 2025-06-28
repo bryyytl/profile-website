@@ -1,10 +1,8 @@
 import { Burger, Group } from "@mantine/core";
 import HeaderNavButton from "./header-nav-button";
 import ModeButton from "./mode-button";
-import { navigationLinkButtons } from "@/app/common/constants/navigation";
-import { useNavigationContext } from "@/app/common/contexts/navigation";
-
-// div className="gap-1 flex items-center justify-start"
+import { useNavigationContext } from "@/contexts/navigation";
+import { navigationLinkButtons } from "@/constants/navigation";
 
 const Header = () => {
   const { toggleNavMenu, isNavMenuOpen } = useNavigationContext();
