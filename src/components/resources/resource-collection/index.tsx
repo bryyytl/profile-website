@@ -1,6 +1,7 @@
 import { resourceCollectionList } from "@/constants/resourceFilterCollection";
 import { useResourceFilterContext } from "@/contexts/resource-filter";
-import { Anchor, List } from "@mantine/core";
+import { List } from "@mantine/core";
+import Link from "next/link";
 import type { ReactElement } from "react";
 
 const ResourceCollection = (): ReactElement => {
@@ -13,9 +14,13 @@ const ResourceCollection = (): ReactElement => {
         )
         .map(({ href, description }) => (
           <List.Item key={description}>
-            <Anchor href={href} target="_blank">
+            <Link
+              className="text-[var(--mantine-color-anchor)] hover:underline"
+              href={href}
+              target="_blank"
+            >
               {description}
-            </Anchor>
+            </Link>
           </List.Item>
         ))}
     </List>
