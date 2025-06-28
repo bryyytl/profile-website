@@ -1,4 +1,4 @@
-.skills-card-title {
+.card-title {
   &::after {
     content: "";
     display: block;
