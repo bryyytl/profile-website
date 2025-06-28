@@ -1,11 +1,10 @@
-import { Title } from "@mantine/core";
 import SkillsCards from "./skills-cards";
 
 const Skills = () => (
   <div className="gap-3 p-4 flex flex-col items-stretch justify-start">
-    <Title mb="lg" order={2} ta="center">
+    <h2 className="font-medium mb-3 md:mb-5 text-2xl md:text-3xl text-center">
       What I Do
-    </Title>
+    </h2>
     <SkillsCards />
   </div>
 );

@@ -1,4 +1,3 @@
-import { Title } from "@mantine/core";
 import clsx from "clsx";
 import styles from "./aboutdescription.module.css";
 
@@ -11,9 +10,9 @@ const AboutDescription = () => {
       )}
     >
       <div className="gap-4 flex flex-col items-stretch justify-start">
-        <Title order={1} size="h3">
+        <h2 className="font-medium text-xl md:text-2xl">
           Hi there, I'm Bryan Laporte!
-        </Title>
+        </h2>
         <p>
           I am a passionate senior front-end focused full stack web software
           engineer with over 5 years of experience developing graphically rich

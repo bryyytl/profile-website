@@ -1,4 +1,4 @@
-import { Card, Title } from "@mantine/core";
+import { Card } from "@mantine/core";
 import type { ReactElement } from "react";
 import PersonalInterestCards from "./personal-interest-cards";
 
@@ -6,9 +6,9 @@ const PersonalInterests = (): ReactElement => {
   return (
     <Card bg="var(--background-secondary)" m="md" p="md">
       <div className="gap-4 flex flex-col items-stretch justify-start">
-        <Title my="md" order={2} ta="center">
+        <h2 className="font-medium my-2 sm:my-4 text-2xl md:text-3xl text-center">
           Personal Interests
-        </Title>
+        </h2>
       </div>
       <PersonalInterestCards />
     </Card>

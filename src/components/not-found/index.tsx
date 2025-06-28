@@ -1,8 +1,8 @@
-import { Button, Container, Title } from "@mantine/core";
-import Link from "next/link";
-import styles from "./notfound.module.css";
-import type { ReactElement } from "react";
+import { Button, Container } from "@mantine/core";
 import clsx from "clsx";
+import Link from "next/link";
+import type { ReactElement } from "react";
+import styles from "./notfound.module.css";
 
 const NotFound = (): ReactElement => {
   return (
@@ -18,10 +18,10 @@ const NotFound = (): ReactElement => {
             fill="currentColor"
           />
         </svg>
-        <div className={styles.content}>
-          <Title className={styles.title} order={1}>
+        <div className="pt-30 md:pt-55 relative z-1">
+          <h1 className="font-medium text-3xl md:text-4xl text-center">
             Nothing to see here
-          </Title>
+          </h1>
           <p className="text-lg mt-8 mb-12 max-w-135 m-auto text-center text-[var(--mantine-color-dimmed)]">
             The page you are trying to open does not exist. You may have
             mistyped the address, or the page has been moved to another URL. If
