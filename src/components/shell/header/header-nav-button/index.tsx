@@ -1,9 +1,8 @@
-import type { ReactElement } from "react";
-import styles from "./headernavbutton.module.css";
-import { Anchor } from "@mantine/core";
+import type { NavigationLinkButton } from "@/constants/navigation";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import type { NavigationLinkButton } from "@/constants/navigation";
+import type { ReactElement } from "react";
+import styles from "./headernavbutton.module.css";
 
 const HeaderNavButton = ({
   href,
@@ -11,14 +10,13 @@ const HeaderNavButton = ({
 }: NavigationLinkButton): ReactElement => {
   const pathname = usePathname();
   return (
-    <Anchor
+    <Link
       className={styles["header-nav-button"]}
-      component={Link}
       data-active={pathname === href}
       href={href}
     >
       {label}
-    </Anchor>
+    </Link>
   );
 };
 
