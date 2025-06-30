@@ -1,4 +1,3 @@
-import { Container } from "@mantine/core";
 import type { ReactElement } from "react";
 import NotFoundIndicator from "./not-found-indicator";
 import NotFoundMessage from "./not-found-message";
@@ -6,7 +5,7 @@ import ReturnHomeLink from "./return-home-link";
 
 const NotFound = (): ReactElement => {
   return (
-    <Container className="py-20">
+    <div className="max-w-3xl px-4 py-20 mx-auto">
       <div className="relative">
         <NotFoundIndicator />
         <div className="pt-30 md:pt-55 relative z-1">
@@ -17,7 +16,7 @@ const NotFound = (): ReactElement => {
           <ReturnHomeLink />
         </div>
       </div>
-    </Container>
+    </div>
   );
 };
 

@@ -1,11 +1,10 @@
-import { Container } from "@mantine/core";
 import type { ReactElement } from "react";
 import ResourceCollection from "./resource-collection";
 import ResourceFilters from "./resource-filters";
 
 const Resources = (): ReactElement => {
   return (
-    <Container my="xl" size="sm">
+    <div className="px-4 max-w-3xl my-8 mx-auto">
       <div className="gap-4 w-inherit flex flex-col items-stretch justify-start">
         <h1 className="font-medium text-4xl">Personal Resource Collection</h1>
         <p className="text-[var(--mantine-color-dimmed)]">
@@ -17,7 +16,7 @@ const Resources = (): ReactElement => {
         <h3 className="font-medium text-xl">Matching Results</h3>
         <ResourceCollection />
       </div>
-    </Container>
+    </div>
   );
 };
 
