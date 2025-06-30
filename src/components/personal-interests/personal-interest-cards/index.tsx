@@ -1,20 +1,20 @@
-import { SimpleGrid } from "@mantine/core";
 import type { ReactElement } from "react";
 import { personalInterests } from "./constants";
 import PersonalInterestCard from "./personal-interest-card";
 
 const PersonalInterestCards = (): ReactElement => {
   return (
-    <SimpleGrid cols={{ base: 1, md: 3, sm: 2 }} p="sm" spacing="md">
+    <ul className="gap-4 sm:grid-cols-2 lg:grid-cols-3 p-2 grid grid-cols-1">
       {personalInterests.map(({ icon, title, description }) => (
-        <PersonalInterestCard
-          description={description}
-          icon={icon}
-          key={title}
-          title={title}
-        />
+        <li className="col-span-1" key={title}>
+          <PersonalInterestCard
+            description={description}
+            icon={icon}
+            title={title}
+          />
+        </li>
       ))}
-    </SimpleGrid>
+    </ul>
   );
 };
 

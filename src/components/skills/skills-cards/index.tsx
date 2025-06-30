@@ -1,15 +1,16 @@
-import { SimpleGrid } from "@mantine/core";
 import type { ReactElement } from "react";
 import { skillCards } from "./constants";
 import SkillsCard from "./skills-card";
 
 const SkillsCards = (): ReactElement => {
   return (
-    <SimpleGrid cols={{ base: 1, md: 2 }} m="0 auto" maw={800}>
+    <ul className="gap-4 md:grid-cols-2 max-w-800 mx-auto grid grid-cols-1">
       {skillCards.map(({ title, listItems }) => (
-        <SkillsCard key={title} listItems={listItems} title={title} />
+        <li className="col-span-1" key={title}>
+          <SkillsCard listItems={listItems} title={title} />
+        </li>
       ))}
-    </SimpleGrid>
+    </ul>
   );
 };
 

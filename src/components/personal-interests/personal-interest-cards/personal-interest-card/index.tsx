@@ -10,9 +10,8 @@ const PersonalInterestCard = ({
   title,
 }: PersonalInterest): ReactElement => {
   const Icon = icon;
-
   return (
-    <Card className={styles.card} padding="xl">
+    <Card className={styles.card} h="100%" padding="xl">
       <Icon size={50} stroke={2} />
       <CardTitle className="mt-4">{title}</CardTitle>
       <p className="text-sm mt-4 text-[var(--mantine-color-dimmed)]">
