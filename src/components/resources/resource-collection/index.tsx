@@ -1,19 +1,18 @@
 import { resourceCollectionList } from "@/constants/resourceFilterCollection";
 import { useResourceFilterContext } from "@/contexts/resource-filter";
-import { List } from "@mantine/core";
 import Link from "next/link";
 import type { ReactElement } from "react";
 
 const ResourceCollection = (): ReactElement => {
   const { filterValue } = useResourceFilterContext();
   return (
-    <List listStyleType="disc" withPadding>
+    <ul className="px-4 list-inside list-disc">
       {resourceCollectionList
         .filter(
           (item) => filterValue === null || item.metatags.includes(filterValue),
         )
         .map(({ href, description }) => (
-          <List.Item key={description}>
+          <li key={description}>
             <Link
               className="text-[var(--mantine-color-anchor)] hover:underline"
               href={href}
@@ -21,9 +20,9 @@ const ResourceCollection = (): ReactElement => {
             >
               {description}
             </Link>
-          </List.Item>
+          </li>
         ))}
-    </List>
+    </ul>
   );
 };
 
