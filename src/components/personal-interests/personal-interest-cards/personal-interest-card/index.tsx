@@ -1,6 +1,6 @@
 import CardTitle from "@/components/card-title";
 import type { PersonalInterest } from "@/components/personal-interests/personal-interest-cards/constants";
-import { Card } from "@mantine/core";
+import clsx from "clsx";
 import type { ReactElement } from "react";
 import styles from "./personalinterestcard.module.css";
 
@@ -11,13 +11,18 @@ const PersonalInterestCard = ({
 }: PersonalInterest): ReactElement => {
   const Icon = icon;
   return (
-    <Card className={styles.card} h="100%" padding="xl">
+    <div
+      className={clsx(
+        "p-8 rounded-md shadow-sm flex flex-col",
+        styles["personal-interest-card"],
+      )}
+    >
       <Icon size={50} stroke={2} />
       <CardTitle className="mt-4">{title}</CardTitle>
       <p className="text-sm mt-4 text-[var(--mantine-color-dimmed)]">
         {description}
       </p>
-    </Card>
+    </div>
   );
 };
 

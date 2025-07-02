@@ -1,11 +1,17 @@
 import CardTitle from "@/components/card-title";
 import type { Skill } from "@/components/skills/skills-cards/constants";
-import { Card } from "@mantine/core";
+import clsx from "clsx";
 import type { ReactElement } from "react";
+import styles from "./skillscard.module.css";
 
 const SkillsCard = ({ title, listItems }: Skill): ReactElement => {
   return (
-    <Card h="100%" padding="lg">
+    <div
+      className={clsx(
+        "p-6 rounded-md shadow-sm flex flex-col",
+        styles["skills-card"],
+      )}
+    >
       <div className="gap-6 flex flex-col items-center justify-start">
         <CardTitle>{title}</CardTitle>
         <ul className="pb-4 list-outside list-none">
@@ -20,7 +26,7 @@ const SkillsCard = ({ title, listItems }: Skill): ReactElement => {
           ))}
         </ul>
       </div>
-    </Card>
+    </div>
   );
 };
 
