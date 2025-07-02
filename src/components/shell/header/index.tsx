@@ -1,22 +1,21 @@
 import { navigationLinkButtons } from "@/constants/navigation";
-import { Group } from "@mantine/core";
 import HeaderBurgerMenu from "./header-burger-menu";
 import HeaderNavButton from "./header-nav-button";
 import ModeButton from "./mode-button";
 
 const Header = () => {
   return (
-    <Group gap="xs" justify="space-between" p="md">
+    <div className="gap-2 px-4 flex h-full items-center justify-between">
       <HeaderBurgerMenu />
-      <Group flex="auto" gap="xs" justify="flex-end">
-        <Group gap="xs" visibleFrom="sm">
+      <div className="gap-2 flex flex-auto justify-end">
+        <div className="gap-2 md:visible invisible flex">
           {navigationLinkButtons.map((navLinkButton) => (
             <HeaderNavButton {...navLinkButton} key={navLinkButton.label} />
           ))}
-        </Group>
+        </div>
         <ModeButton />
-      </Group>
-    </Group>
+      </div>
+    </div>
   );
 };
 
