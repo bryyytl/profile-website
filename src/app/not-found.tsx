@@ -1,5 +1,8 @@
-import NotFound from "./components/not-found";
+import NotFound from "@/components/not-found";
+import type { ReactElement } from "react";
 
-export default function NotFoundPage() {
+const NotFoundPage = (): ReactElement => {
   return <NotFound />;
-}
+};
+
+export default NotFoundPage;

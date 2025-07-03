@@ -1,0 +1,9 @@
+.not-found-indicator {
+  color: var(--mantine-color-gray-1);
+  opacity: 1;
+
+  @mixin dark {
+    color: var(--mantine-color-dark-6);
+    opacity: 0.75;
+  }
+}
