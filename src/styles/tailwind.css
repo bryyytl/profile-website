@@ -1,2 +1,33 @@
 @import url("tailwindcss");
 @import url("@mantine/core/styles.layer.css");
+
+@layer components {
+  .action-icon {
+    background-color: var(--mantine-color-default);
+    border: 1px solid var(--mantine-color-default-border);
+  
+    &:hover {
+      background-color: var(--mantine-color-default-hover);
+    }
+  
+    @mixin dark {
+      background-color: var(--mantine-color-default);
+      border: 1px solid var(--mantine-color-default-border);
+
+      &:hover {
+        background-color: var(--mantine-color-default-hover);
+      }
+    }
+  }
+
+  .card-title {
+    &::after {
+      content: "";
+      display: block;
+      background-color: var(--mantine-color-blue-filled);
+      width: 45px;
+      height: 2px;
+      margin-top: var(--mantine-spacing-sm);
+    }
+  }  
+}

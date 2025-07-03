@@ -1,4 +1,3 @@
-import CardTitle from "@/components/card-title";
 import type { Skill } from "@/components/skills/skills-cards/constants";
 import clsx from "clsx";
 import type { ReactElement } from "react";
@@ -13,7 +12,7 @@ const SkillsCard = ({ title, listItems }: Skill): ReactElement => {
       )}
     >
       <div className="gap-6 flex flex-col items-center justify-start">
-        <CardTitle>{title}</CardTitle>
+        <h3 className="card-title font-medium text-lg">{title}</h3>
         <ul className="pb-4 list-outside list-none">
           {listItems.map(({ iconElement: Icon, iconDescription }) => (
             <li

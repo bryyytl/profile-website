@@ -1,4 +1,3 @@
-import CardTitle from "@/components/card-title";
 import type { PersonalInterest } from "@/components/personal-interests/personal-interest-cards/constants";
 import clsx from "clsx";
 import type { ReactElement } from "react";
@@ -18,7 +17,7 @@ const PersonalInterestCard = ({
       )}
     >
       <Icon size={50} stroke={2} />
-      <CardTitle className="mt-4">{title}</CardTitle>
+      <h3 className="card-title font-medium text-lg mt-4">{title}</h3>
       <p className="text-sm mt-4 text-[var(--mantine-color-dimmed)]">
         {description}
       </p>
