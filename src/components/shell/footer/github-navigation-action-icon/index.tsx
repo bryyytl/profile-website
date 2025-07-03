@@ -1,17 +1,16 @@
-import { ActionIcon } from "@mantine/core";
 import { IconBrandGithub } from "@tabler/icons-react";
 import Link from "next/link";
 import type { ReactElement } from "react";
 
 const GitHubNavigationActionIcon = (): ReactElement => {
   return (
-    <ActionIcon
+    <Link
       aria-label="Navigate to GitHub"
-      component={Link}
+      className="action-icon"
       href="https://github.com/bryyytl"
     >
-      <IconBrandGithub />
-    </ActionIcon>
+      <IconBrandGithub aria-hidden="true" />
+    </Link>
   );
 };
 
