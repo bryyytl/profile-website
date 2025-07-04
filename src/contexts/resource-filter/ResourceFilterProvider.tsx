@@ -2,7 +2,7 @@ import type { PropsWithChildren, ReactElement } from "react";
 import { useMemo, useState, useCallback } from "react";
 import type { ResourceFilterContextValue } from "./context";
 import ResourceFilterContext from "./context";
-import type { MouseEvent } from "react";
+import type { ChangeEvent } from "react";
 import type { ResourceItemMetatag } from "@/constants/resourceFilterCollection";
 
 const ResourceFilterProvider = ({
@@ -13,17 +13,19 @@ const ResourceFilterProvider = ({
   );
 
   const handleChipClick = useCallback(
-    (event: MouseEvent<HTMLInputElement>) => {
-      if (event.currentTarget.value === filterValue) setFilterValue(null);
+    (event: ChangeEvent<HTMLInputElement>) => {
+      const { value } = event.currentTarget;
+      setFilterValue((prevFilter) =>
+        prevFilter === value ? null : (value as ResourceItemMetatag),
+      );
     },
-    [filterValue],
+    [],
   );
 
   const value: ResourceFilterContextValue = useMemo(
     () => ({
       filterValue,
       handleChipClick,
-      setFilterValue,
     }),
     [filterValue, handleChipClick],
   );

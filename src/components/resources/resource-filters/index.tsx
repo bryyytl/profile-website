@@ -1,37 +1,24 @@
 import { resourceItemMetatags } from "@/constants/resourceFilterCollection";
-import { useResourceFilterContext } from "@/contexts/resource-filter";
-import { Chip } from "@mantine/core";
-import { IconX } from "@tabler/icons-react";
 import type { ReactElement } from "react";
+import ResourceFilterItem from "./resource-filter-item";
 
 const ResourceFilters = (): ReactElement => {
-  const { handleChipClick, filterValue, setFilterValue } =
-    useResourceFilterContext();
-
   return (
-    <Chip.Group
-      multiple={false}
-      onChange={setFilterValue as (value: string | null) => void}
-      value={filterValue}
-    >
+    <fieldset aria-label="Filter by topic">
+      <p className="font-medium mb-4 text-sm inline-block">Filter by topic</p>
       <div className="mb-4 max-w-928 mx-auto flex flex-wrap items-center justify-start gap-[10px]">
         {[...resourceItemMetatags]
           .sort((a, b) =>
             a.toLocaleLowerCase().localeCompare(b.toLocaleLowerCase()),
           )
           .map((resourceItemMetatag) => (
-            <Chip
-              icon={<IconX size={16} />}
+            <ResourceFilterItem
               key={resourceItemMetatag}
-              onClick={handleChipClick}
-              tt="capitalize"
-              value={resourceItemMetatag}
-            >
-              {resourceItemMetatag}
-            </Chip>
+              resourceItemMetatag={resourceItemMetatag}
+            />
           ))}
       </div>
-    </Chip.Group>
+    </fieldset>
   );
 };
 

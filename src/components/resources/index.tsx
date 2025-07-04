@@ -11,7 +11,6 @@ const Resources = (): ReactElement => {
           A collection of some of my favorite references, resources, and other
           miscellaneous things of interest.
         </p>
-        <p className="font-medium text-sm inline-block">Filter by topic</p>
         <ResourceFilters />
         <h3 className="font-medium text-xl">Matching Results</h3>
         <ResourceCollection />
