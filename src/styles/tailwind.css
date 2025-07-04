@@ -3,11 +3,8 @@
 
 @layer components {
   .action-icon {
-    background-color: var(--mantine-color-default);
-    border: 1px solid var(--mantine-color-default-border);
     border-radius: var(--radius-md);
     padding: var(--spacing);
-    box-shadow: var(--shadow-xs);
 
     &:hover {
       background-color: var(--mantine-color-default-hover);
@@ -19,9 +16,6 @@
     }
 
     @mixin dark {
-      background-color: var(--mantine-color-default);
-      border: 1px solid var(--mantine-color-default-border);
-
       &:hover {
         background-color: var(--mantine-color-default-hover);
       }

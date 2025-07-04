@@ -7,7 +7,7 @@ const Footer = (): ReactElement => {
   return (
     <div className="gap-4 flex items-center justify-between">
       <CopywriteText />
-      <div className="gap-2 flex items-center justify-start">
+      <div className="gap-0.5 flex items-center justify-start">
         <GitHubNavigationActionIcon />
         <LinkedInNavigationActionIcon />
       </div>
