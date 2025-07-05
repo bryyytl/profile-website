@@ -5,9 +5,7 @@ const cssVariablesResolver: CSSVariablesResolver = () => ({
     "--mantine-color-text": "#fff",
   },
   light: {},
-  variables: {
-    "--background-secondary": "var(--mantine-color-gray-light)",
-  },
+  variables: {},
 });
 
 export default cssVariablesResolver;
