@@ -10,7 +10,7 @@ const PersonalInterestCard = ({
   return (
     <div className="p-8 rounded-md shadow-sm personal-interest-card flex flex-col">
       <Icon size={50} stroke={2} />
-      <h3 className="card-title font-medium text-lg mt-4">{title}</h3>
+      <h3 className="card-title mt-4">{title}</h3>
       <p className="text-sm mt-4 text-[var(--mantine-color-dimmed)]">
         {description}
       </p>

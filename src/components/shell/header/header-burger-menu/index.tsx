@@ -8,7 +8,7 @@ const HeaderBurgerMenu = (): ReactElement => {
   return (
     <button
       aria-label="Toggle navigation menu"
-      className="action-icon md:invisible visible cursor-pointer"
+      className="action-icon md:invisible visible"
       onClick={toggleNavMenu}
       type="button"
     >

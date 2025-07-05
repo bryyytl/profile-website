@@ -5,7 +5,7 @@ const SkillsCard = ({ title, listItems }: Skill): ReactElement => {
   return (
     <div className="p-6 rounded-md shadow-sm skills-card flex flex-col">
       <div className="gap-6 flex flex-col items-center justify-start">
-        <h3 className="card-title font-medium text-lg">{title}</h3>
+        <h3 className="card-title">{title}</h3>
         <ul className="pb-4 list-outside list-none">
           {listItems.map(({ iconElement: Icon, iconDescription }) => (
             <li

@@ -10,7 +10,7 @@ const HeaderNavButton = ({
   const pathname = usePathname();
   return (
     <Link
-      className="rounded-md decoration-none px-3 py-2 text-sm font-medium focus-visible:outline-blue-600 header-nav-button focus-visible:outline-2 focus-visible:outline-offset-2"
+      className="header-nav-button"
       data-active={pathname === href}
       href={href}
     >
