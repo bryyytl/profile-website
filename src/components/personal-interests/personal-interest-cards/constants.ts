@@ -23,7 +23,7 @@ const designSystemsCard: PersonalInterest = {
 
 const accessibilityCard: PersonalInterest = {
   description:
-    " Champion of building accessible platforms for all users - regardless of background.",
+    "Champion of building accessible platforms for all users - regardless of background.",
   icon: IconAccessible,
   title: "Application accessibility",
 };

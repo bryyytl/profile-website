@@ -2,7 +2,7 @@
 
 import { useComputedColorScheme, useMantineColorScheme } from "@mantine/core";
 import { IconMoon, IconSun } from "@tabler/icons-react";
-import classes from "./modebutton.module.css";
+import styles from "./modebutton.module.css";
 
 const ModeButton = () => {
   const { setColorScheme } = useMantineColorScheme();
@@ -22,8 +22,8 @@ const ModeButton = () => {
       onClick={handleClick}
       type="button"
     >
-      <IconSun aria-hidden="true" className={classes.light} stroke={1.5} />
-      <IconMoon aria-hidden="true" className={classes.dark} stroke={1.5} />
+      <IconSun aria-hidden="true" className={styles.light} stroke={1.5} />
+      <IconMoon aria-hidden="true" className={styles.dark} stroke={1.5} />
     </button>
   );
 };

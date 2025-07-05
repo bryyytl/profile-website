@@ -1,14 +1,8 @@
-import clsx from "clsx";
-import styles from "./aboutdescription.module.css";
+import type { ReactElement } from "react";
 
-const AboutDescription = () => {
+const AboutDescription = (): ReactElement => {
   return (
-    <div
-      className={clsx(
-        "max-w-800 rounded-lg p-4 flex flex-col bg-[var(--mantine-color-blue-light)] text-[var(--mantine-color-text)]",
-        styles["about-description"],
-      )}
-    >
+    <div className="max-w-800 rounded-lg p-4 about-description flex flex-col bg-[var(--mantine-color-blue-light)] text-[var(--mantine-color-text)]">
       <div className="gap-4 flex flex-col items-stretch justify-start">
         <h2 className="font-medium text-xl md:text-2xl">
           Hi there, I'm Bryan Laporte!

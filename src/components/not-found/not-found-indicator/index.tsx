@@ -1,11 +1,9 @@
-import clsx from "clsx";
 import type { ReactElement } from "react";
-import styles from "./notfoundindicator.module.css";
 
 const NotFoundIndicator = (): ReactElement => {
   return (
     <svg
-      className={clsx("inset-0 absolute", styles["not-found-indicator"])}
+      className="inset-0 not-found-indicator absolute"
       viewBox="0 0 362 145"
       xmlns="http://www.w3.org/2000/svg"
     >

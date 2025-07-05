@@ -1,8 +1,6 @@
-import { useResourceFilterContext } from "@/contexts/resource-filter";
-import clsx from "clsx";
-import type { ReactElement } from "react";
-import styles from "./resourcefilteritem.module.css";
 import type { ResourceItemMetatag } from "@/constants/resourceFilterCollection";
+import { useResourceFilterContext } from "@/contexts/resource-filter";
+import type { ReactElement } from "react";
 
 interface ResourceFilterItemProps {
   resourceItemMetatag: ResourceItemMetatag;
@@ -15,10 +13,7 @@ const ResourceFilterItem = ({
   return (
     <label
       aria-label={resourceItemMetatag}
-      className={clsx(
-        "group rounded-xl px-4 py-1 relative flex items-center justify-center border border-transparent",
-        styles["resource-filter-item"],
-      )}
+      className="group rounded-xl px-4 py-1 resource-filter-item relative flex items-center justify-center border border-transparent"
       data-checked={filterValue === resourceItemMetatag}
     >
       <input
