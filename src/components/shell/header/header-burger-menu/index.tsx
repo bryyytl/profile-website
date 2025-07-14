@@ -1,10 +1,10 @@
 import { useNavigationContext } from "@/contexts/navigation";
-import { IconMenu2, IconX } from "@tabler/icons-react";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import type { ReactElement } from "react";
 
 const HeaderBurgerMenu = (): ReactElement => {
   const { toggleNavMenu, isNavMenuOpen } = useNavigationContext();
-  const Icon = isNavMenuOpen ? IconX : IconMenu2;
+  const Icon = isNavMenuOpen ? XMarkIcon : Bars3Icon;
   return (
     <button
       aria-label="Toggle navigation menu"
@@ -12,7 +12,7 @@ const HeaderBurgerMenu = (): ReactElement => {
       onClick={toggleNavMenu}
       type="button"
     >
-      <Icon aria-hidden="true" stroke={1.5} />
+      <Icon aria-hidden="true" className="size-6 block" />
     </button>
   );
 };

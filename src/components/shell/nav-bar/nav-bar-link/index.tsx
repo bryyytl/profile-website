@@ -15,12 +15,7 @@ const NavBarLink = ({
       data-active={pathname === href}
       href={href}
     >
-      <Icon
-        aria-hidden="true"
-        className="text-current"
-        size={16}
-        stroke={1.5}
-      />
+      <Icon aria-hidden="true" className="size-4 block text-current" />
       {label}
     </Link>
   );
