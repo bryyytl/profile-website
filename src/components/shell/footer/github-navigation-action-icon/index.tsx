@@ -1,4 +1,4 @@
-import { IconBrandGithub } from "@tabler/icons-react";
+import GithubIcon from "@/components/icons/github-icon";
 import Link from "next/link";
 import type { ReactElement } from "react";
 
@@ -9,7 +9,7 @@ const GitHubNavigationActionIcon = (): ReactElement => {
       className="action-icon"
       href="https://github.com/bryyytl"
     >
-      <IconBrandGithub aria-hidden="true" />
+      <GithubIcon aria-hidden="true" className="size-6 block" />
     </Link>
   );
 };
