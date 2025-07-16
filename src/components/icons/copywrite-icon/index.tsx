@@ -2,9 +2,6 @@ import type { SVGProps, ReactElement } from "react";
 
 const CopywriteIcon = (props: SVGProps<SVGSVGElement>): ReactElement => (
   <svg
-    // stroke-linecap="round"
-    // stroke-linejoin="round"
-    // stroke-width="2"
     height="1em"
     viewBox="0 0 24 24"
     width="1em"
