@@ -1,16 +1,19 @@
 import { useNavigationContext } from "@/contexts/navigation";
-import { Burger } from "@mantine/core";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
 import type { ReactElement } from "react";
 
 const HeaderBurgerMenu = (): ReactElement => {
   const { toggleNavMenu, isNavMenuOpen } = useNavigationContext();
+  const Icon = isNavMenuOpen ? XMarkIcon : Bars3Icon;
   return (
-    <Burger
-      hiddenFrom="sm"
+    <button
+      aria-label="Toggle navigation menu"
+      className="action-icon md:invisible visible"
       onClick={toggleNavMenu}
-      opened={isNavMenuOpen}
-      size="sm"
-    />
+      type="button"
+    >
+      <Icon aria-hidden="true" className="size-6 block" />
+    </button>
   );
 };
 

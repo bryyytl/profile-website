@@ -1,11 +1,14 @@
-import { useDisclosure } from "@mantine/hooks";
 import type { PropsWithChildren, ReactElement } from "react";
-import { useMemo } from "react";
+import { useCallback, useMemo, useState } from "react";
 import type { NavigationContextValue } from "./context";
 import NavigationContext from "./context";
 
 const NavigationProvider = ({ children }: PropsWithChildren): ReactElement => {
-  const [isNavMenuOpen, { toggle: toggleNavMenu }] = useDisclosure();
+  const [isNavMenuOpen, setNavMenuOpen] = useState(false);
+
+  const toggleNavMenu = useCallback(() => {
+    setNavMenuOpen((prevNavMenuOpen) => !prevNavMenuOpen);
+  }, []);
 
   const value: NavigationContextValue = useMemo(
     () => ({

@@ -1,8 +1,9 @@
 "use client";
 
 import { useComputedColorScheme, useMantineColorScheme } from "@mantine/core";
-import { IconMoon, IconSun } from "@tabler/icons-react";
-import classes from "./modebutton.module.css";
+import { SunIcon, MoonIcon } from "@heroicons/react/24/outline";
+import styles from "./modebutton.module.css";
+import clsx from "clsx";
 
 const ModeButton = () => {
   const { setColorScheme } = useMantineColorScheme();
@@ -22,8 +23,14 @@ const ModeButton = () => {
       onClick={handleClick}
       type="button"
     >
-      <IconSun aria-hidden="true" className={classes.light} stroke={1.5} />
-      <IconMoon aria-hidden="true" className={classes.dark} stroke={1.5} />
+      <SunIcon
+        aria-hidden="true"
+        className={clsx("size-6 block", styles.light)}
+      />
+      <MoonIcon
+        aria-hidden="true"
+        className={clsx("size-6 block", styles.dark)}
+      />
     </button>
   );
 };
