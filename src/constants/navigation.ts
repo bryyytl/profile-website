@@ -1,5 +1,9 @@
 import { ElementType } from "react";
-import { HomeIcon, LinkIcon } from "@heroicons/react/24/outline";
+import {
+  HomeIcon,
+  LinkIcon,
+  WrenchScrewdriverIcon,
+} from "@heroicons/react/24/outline";
 
 export interface NavigationLinkButton {
   href: string;
@@ -22,5 +26,10 @@ export const navigationLinkButtons: NavigationLinkButton[] = [
     href: "/resources/",
     icon: LinkIcon,
     label: "Resources",
+  },
+  {
+    href: "/tools/",
+    icon: WrenchScrewdriverIcon,
+    label: "Tools",
   },
 ];
